@@ -6,6 +6,7 @@ const puzzleBoard = document.querySelector(".puzzle-board");
 const puzzlePieces = document.querySelectorAll(".puzzle-pieces img");
 const dropZones = document.querySelectorAll(".drop-zone");
 let draggedPiece;
+const puzzlePieceDiv = document.querySelector(".puzzle-pieces");
 
 //functions
 function changeBGImage(event) {
@@ -14,6 +15,10 @@ function changeBGImage(event) {
     //console.log(this.id);
     //background-image: url('../images/backGround0.jpg');
     // puzzleBoard.style.backgroundImage = `url('./images/backGround${this.id}.jpg')`;
+
+    //fix goes here
+
+    //puzzlePieces.forEach(piece => puzzlePieceDiv appendchild())
 
     //Method 2
     console.log(event.currentTarget.id);
@@ -31,6 +36,13 @@ function handleOver(e) {
 }
 
 function handleDrop() {
+    //this is where the fix will go
+
+    //going to use an if statement
+
+    //if(this >=1) {
+    // return;
+    // }
     this.appendChild(draggedPiece);
 }
 
