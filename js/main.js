@@ -40,9 +40,12 @@ function handleDrop() {
 
     //going to use an if statement
 
-    //if(this >=1) {
-    // return;
-    // }
+    //One piece can no longer be in the same Container Drop Zone. but it doesn't reset into default position.
+    if(this.children.length >=1) {
+     return;
+    }
+
+
     this.appendChild(draggedPiece);
 }
 
