@@ -38,3 +38,5 @@ theButtons.forEach(button => button.addEventListener("click", changeBGImage));
 puzzlePieces.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
 dropZones.forEach(zone => zone.addEventListener("dragover", handleOver));
 dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
+
+//WHY IS IT CONFLICTING, ITS NOT LETTING ME MERGE, WHY IS IT
