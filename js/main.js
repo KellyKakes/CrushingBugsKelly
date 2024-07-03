@@ -10,6 +10,7 @@ let draggedPiece;
 //functions
 
 function changeBGImage(event) {
+<<<<<<< Updated upstream
     //console.log("changeBGImage called");
     //method 1
     //console.log(this.id);
@@ -20,6 +21,16 @@ function changeBGImage(event) {
     console.log(event.currentTarget.id);
     puzzleBoard.style.backgroundImage = `url('../images/backGround${event.currentTarget.id}.jpg')`;
 
+=======
+    //fix goes here
+    puzzlePieces.forEach(piece => puzzlePieceDiv.appendChild(piece));
+    console.log(event.currentTarget.id);
+    //puzzlePieces.forEach(piece => {puzzlePieceDiv appendchild(piece)})
+    //Wait I just changed the {} these things and it worked?
+
+    //Method 2
+    puzzleBoard.style.backgroundImage = `url('./images/backGround${event.currentTarget.id}.jpg')`;
+>>>>>>> Stashed changes
 }
 
 function handleStartDrag() {
@@ -33,7 +44,19 @@ function handleOver(e) {
 }
 
 function handleDrop() {
+<<<<<<< Updated upstream
+=======
+    //this is where the fix will go
+
+    //going to use an if statement
+
+    //One piece can no longer be in the same Container Drop Zone. but it doesn't reset into default position.
+    if(this.children.length >=1) {
+     return;
+    }
+>>>>>>> Stashed changes
     this.appendChild(draggedPiece);
+    console.log(event.currentTarget.id);
 }
 
 console.log(puzzlePieces);
